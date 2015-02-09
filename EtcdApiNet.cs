@@ -41,14 +41,14 @@ namespace EtcdApiNet
 
     public class EtcdResultNode
     {
-        private string key = null;
-        private string value = null;
-        private bool? dir = null;
-        private long? createdIndex = null;
-        private long? modifiedIndex = null;
-        private long? ttl = null;
-        private DateTime? expiration = null;
-        private EtcdResultNode[] nodes = null;
+        public string key = null;
+        public string value = null;
+        public bool? dir = null;
+        public long? createdIndex = null;
+        public long? modifiedIndex = null;
+        public long? ttl = null;
+        public DateTime? expiration = null;
+        public EtcdResultNode[] nodes = null;
 
         public override string ToString()
         {
