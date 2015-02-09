@@ -350,7 +350,7 @@ namespace EtcdApiNet
             List<string> query = new List<string>();
             if (prevValue != null)
             {
-                query.Add("prevValue=" + WebUtility.UrlEncode(prevValue));
+                query.Add("prevValue=" + Uri.EscapeUriString(prevValue));
             }
             if (prevIndex != null)
             {
@@ -396,7 +396,7 @@ namespace EtcdApiNet
             List<string> query = new List<string>();
             if (prevValue != null)
             {
-                query.Add("prevValue=" + WebUtility.UrlEncode(prevValue));
+                query.Add("prevValue=" + Uri.EscapeUriString(prevValue));
             }
             if (prevIndex != null)
             {
